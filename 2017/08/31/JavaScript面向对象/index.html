@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>JavaScript面向对象 | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样   对象组成: 方法 -&amp;gt; 函数:过程，动态的 属性 -&amp;gt; 变量：状态，静态的    12345678910var arr = [1,2,">
+  <meta name="description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript面向对象">
 <meta property="og:url" content="http://yoursite.com/2017/08/31/JavaScript面向对象/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样   对象组成: 方法 -&amp;gt; 函数:过程，动态的 属性 -&amp;gt; 变量：状态，静态的    12345678910var arr = [1,2,">
-<meta property="og:updated_time" content="2017-09-01T03:00:31.406Z">
+<meta property="og:description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样">
+<meta property="og:updated_time" content="2017-09-01T09:32:00.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript面向对象">
-<meta name="twitter:description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样   对象组成: 方法 -&amp;gt; 函数:过程，动态的 属性 -&amp;gt; 变量：状态，静态的    12345678910var arr = [1,2,">
+<meta name="twitter:description" content="什么是面向对象？ 使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery    面向对象的特点: 封装:不考虑内部实现，只考虑功能使用 继承:从已有对象上，继承出新的对象 多态:父类和子类之间具有相同的操作，但之间的操作又不太一样">
   
     <link rel="alternative" href="/atom.xml" title="" type="application/atom+xml">
   
@@ -176,16 +176,16 @@
 <li>面向对象的特点:<ul>
 <li>封装:不考虑内部实现，只考虑功能使用</li>
 <li>继承:从已有对象上，继承出新的对象</li>
-<li>多态:父类和子类之间具有相同的操作，但之间的操作又不太一样</li>
+<li>多态:父类和子类之间具有相同的操作，但之间的操作又不太一样<a id="more"></a></li>
 </ul>
 </li>
 <li>对象组成:<ul>
 <li>方法 -&gt; 函数:过程，动态的</li>
-<li>属性 -&gt; 变量：状态，静态的</li>
+<li>属性 -&gt; 变量：状态，静态的<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</div><div class="line"><span class="keyword">var</span> a = <span class="number">12</span>;             <span class="comment">//变量:自由</span></div><div class="line">arr.a = <span class="number">5</span>;              <span class="comment">//属性:属于一个对象</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    alert(<span class="string">'a'</span>);         <span class="comment">//函数</span></div><div class="line">&#125;</div><div class="line">arr.fn = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    alert(<span class="string">'a'</span>);        <span class="comment">//方法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</div><div class="line"><span class="keyword">var</span> a = <span class="number">12</span>;             <span class="comment">//变量:自由</span></div><div class="line">arr.a = <span class="number">5</span>;              <span class="comment">//属性:属于一个对象</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    alert(<span class="string">'a'</span>);         <span class="comment">//函数</span></div><div class="line">&#125;</div><div class="line">arr.fn = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    alert(<span class="string">'a'</span>);        <span class="comment">//方法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="理解对象"><a href="#理解对象" class="headerlink" title="理解对象"></a>理解对象</h2><blockquote>
 <p>第一种：基于Object对象</p>
 </blockquote>
