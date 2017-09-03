@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huzipengs.github.io">
-  <title>zSay的博客</title>
+  <title>JavaScript基础篇函数 | zSay的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="zSay的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zSay的博客">
-<meta property="og:url" content="https://huzipengs.github.io/index.html">
+  <meta name="description" content="函数基础知识 为什么要有函数? 在写代码的时候，有一些常用的代码需要书写多次，如果直接复制粘贴的话，会造成大量的冗余代码。 函数可以封装一段重复的JavaScript代码，它只需要声明一次，就可以被多次调用。    冗余代码的缺点：1.代码重复，可阅读性差2.不易维护，如果代码逻辑改变了，所有地方的代码都要跟着改变，效率太低。">
+<meta name="keywords" content="前端,JavaScript,整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript基础篇函数">
+<meta property="og:url" content="https://huzipengs.github.io/2017/09/02/JavaScript基本篇函数/index.html">
 <meta property="og:site_name" content="zSay的博客">
-<meta property="og:description" content="zSay的博客">
+<meta property="og:description" content="函数基础知识 为什么要有函数? 在写代码的时候，有一些常用的代码需要书写多次，如果直接复制粘贴的话，会造成大量的冗余代码。 函数可以封装一段重复的JavaScript代码，它只需要声明一次，就可以被多次调用。    冗余代码的缺点：1.代码重复，可阅读性差2.不易维护，如果代码逻辑改变了，所有地方的代码都要跟着改变，效率太低。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2240517420,3717616868&fm=27&gp=0.jpg">
+<meta property="og:updated_time" content="2017-09-03T04:29:12.668Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zSay的博客">
-<meta name="twitter:description" content="zSay的博客">
+<meta name="twitter:title" content="JavaScript基础篇函数">
+<meta name="twitter:description" content="函数基础知识 为什么要有函数? 在写代码的时候，有一些常用的代码需要书写多次，如果直接复制粘贴的话，会造成大量的冗余代码。 函数可以封装一段重复的JavaScript代码，它只需要声明一次，就可以被多次调用。    冗余代码的缺点：1.代码重复，可阅读性差2.不易维护，如果代码逻辑改变了，所有地方的代码都要跟着改变，效率太低。">
+<meta name="twitter:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2240517420,3717616868&fm=27&gp=0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="zSay的博客" type="application/atom+xml">
   
@@ -149,301 +153,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-JavaScript基础篇语句" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-JavaScript基本篇函数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/03/JavaScript基础篇语句/">JavaScript基础篇语句</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/03/JavaScript基础篇语句/" class="archive-article-date">
-  	<time datetime="2017-09-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3378816792,2001844327&fm=27&gp=0.jpg"></p>
-<ul>
-<li>程序的三种基本结构<ul>
-<li>顺序：从上到下执行的代码就是顺序</li>
-<li>选择：根据不同的情况，执行对应代码</li>
-<li>循环：重复做一件事情</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/09/03/JavaScript基础篇语句/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/03/JavaScript基础篇语句/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JavaScript基础篇结构和类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/02/JavaScript基础篇结构和类型/">JavaScript基础篇结构和类型</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/02/JavaScript基础篇结构和类型/" class="archive-article-date">
-  	<time datetime="2017-09-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=219472007,2250668114&fm=200&gp=0.jpg"></p>
-<h2 id="什么是JS语言？"><a href="#什么是JS语言？" class="headerlink" title="什么是JS语言？"></a>什么是JS语言？</h2><blockquote>
-<p>JavaScript是一种运行在客户端的语言</p>
-</blockquote>
-<p>客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器<br>脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行</p>
-<blockquote>
-<p>JavaScript的三个组成成分:ECMAscript、DOM、BOECMAscript:定义了语法规范，是js的基础核心/解DOM:操作页面元素的API，通过使用这些api操作页面BOM:操作浏览器功能的API，通过使用这些api来操作页面元素</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/09/02/JavaScript基础篇结构和类型/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/02/JavaScript基础篇结构和类型/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JavaScrippt基础篇数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/02/JavaScrippt基础篇数组/">JavaScript基础篇数组</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/02/JavaScrippt基础篇数组/" class="archive-article-date">
-  	<time datetime="2017-09-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2540707854,2078069255&fm=27&gp=0.jpg"></p>
-<blockquote>
-<p>所谓数组，就是将多个元素（通常是同一类型）按一定顺序排列放到一个集合中，那么这个集合我们就称之为数组。</p>
-</blockquote>
-<ul>
-<li>为什么要有数组？<ul>
-<li>我们知道，一个变量能够存储一个值，当我们想要存储多个值的时 候，</li>
-<li>就可以使用数组。比如存储一个班级里面所有学生的姓名。<br>使用数组可以对多个相同类型的值统一的管理，存储起来方便，操作的时候也会很方便。</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/09/02/JavaScrippt基础篇数组/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">整理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/02/JavaScrippt基础篇数组/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JavaScript基本篇函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/02/JavaScript基本篇函数/">JavaScript基础篇函数</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript基础篇函数
     </h1>
   
 
@@ -465,11 +182,132 @@
 </li>
 </ul>
 <p>冗余代码的缺点：<br>1.代码重复，可阅读性差<br>2.不易维护，如果代码逻辑改变了，所有地方的代码都要跟着改变，效率太低。</p>
-        
-          <a class="article-more-a" href="/2017/09/02/JavaScript基本篇函数/#more">more >></a>
-        
+<a id="more"></a>
+<h3 id="函数的概念"><a href="#函数的概念" class="headerlink" title="函数的概念"></a>函数的概念</h3><blockquote>
+<p>把一段相对独立的具有特定功能的代码块封装起来，形成一个独立实体，就是函数，起个名字（函数名），在后续开发中可以反复调用</p>
+</blockquote>
+<ul>
+<li>函数的作用<ul>
+<li>使程序结构变得简单清晰</li>
+<li>有利于维护</li>
+<li>可以提高开发效率</li>
+<li>提高了代码重用性</li>
+<li>另外函数可以控制代码的执行时间以及执行场景</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数的分类"><a href="#函数的分类" class="headerlink" title="函数的分类"></a>函数的分类</h3><ul>
+<li>方式1：<ul>
+<li>有名函数</li>
+<li>匿名函数</li>
+</ul>
+</li>
+<li>方式2<ul>
+<li>内置函数：官方提供好的函数</li>
+<li>自定义函数：用户根据需求定义的函数</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数的声明和调用"><a href="#函数的声明和调用" class="headerlink" title="函数的声明和调用"></a>函数的声明和调用</h3><p>声明函数的语法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//函数体</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>特点:</p>
+<ol>
+<li>函数声明的时候，函数体并不会执行，只要当函数被调用的时候才会执行。</li>
+<li>函数一般都用来干一件事情，需用使用动词+名词，表示做一件事情 <code>tellStory</code> <code>sayHello</code>等</li>
+</ol>
+<blockquote>
+<p>调用函数的语法: 直接调用：函数名();</p>
+</blockquote>
+<p>特点:<br>1.函数只有在调用的时候才会执行，调用需要（）执行<br>2.可以多次调用</p>
+<p>注意:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//匿名函数无法直接调用 ，可以通过匿名函数的自调用来执行，即立即执行函数表达式</span></div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;alert(<span class="number">123</span>)&#125;)();</div></pre></td></tr></table></figure></p>
+<p>示例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//声明函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"吃了没？"</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">//调用函数</span></div><div class="line">sayHi();</div></pre></td></tr></table></figure>
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><blockquote>
+<p>1.形式参数：在声明一个函数的时候，为了函数的功能更加灵活，有些值是固定不了的，对于这些固定不了的值。我们可以给函数设置参数。这个参数没有具体的值，仅仅起到一个占位置的作用，我们通常称之为形式参数，也叫形参。<br>2.实际参数：如果函数在声明时，设置了形参，那么在函数调用的时候就需要传入对应的参数，我们把传入的参数叫做实际参数，也叫实参。</p>
+</blockquote>
+<p>语法:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//带参数的函数声明</span></div><div class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params">形参<span class="number">1</span>, 形参<span class="number">2</span>, 形参...</span>)</span>&#123;</div><div class="line">  <span class="comment">//函数体</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//带参数的函数调用</span></div><div class="line">函数名(实参<span class="number">1</span>, 实参<span class="number">2</span>, 实参<span class="number">3</span>);</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">  alert(a+b);</div><div class="line">&#125;</div><div class="line">sum(<span class="number">15</span>,<span class="number">18</span>);</div><div class="line">sum(<span class="number">16</span>,<span class="number">24</span>);</div></pre></td></tr></table></figure>
+<h3 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h3><blockquote>
+<p>JavaScript中，arguments对象是比较特别的一个对象，实际上是当前函数的一个内置属性。也就是说所有函数都内置了一个arguments对象，arguments对象中存储了传递的所有的实参。arguments是一个伪数组，因此及可以进行遍历</p>
+</blockquote>
+<p>函数的实参列表是一个类数组，具有下标和length长度属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//这个时候 在参数个数不确定的情况下 我们需要学习arguments 来解决问题</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> sum = <span class="number">0</span>;</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++)&#123;</div><div class="line">    sum += <span class="built_in">arguments</span>[i];</div><div class="line">  &#125;</div><div class="line">  <span class="built_in">console</span>.log(sum);</div><div class="line">&#125;</div><div class="line">sum(<span class="number">15</span>,<span class="number">2</span>,<span class="number">6</span>);</div><div class="line">sum(<span class="number">6</span>,<span class="number">9</span>,<span class="number">14</span>,<span class="number">20</span>,<span class="number">8</span>);</div></pre></td></tr></table></figure>
+<h3 id="函数的作用域"><a href="#函数的作用域" class="headerlink" title="函数的作用域"></a>函数的作用域</h3><p>全局变量：在最外层声明的变量就是全局变量，全局变量在任何地方都能访问的到。<br>局部变量：在函数中声明的变量，就是局部变量，局部变量只有在当前函数体内能够访问。<br>隐式全局变量：没有使用var定义的变量也是全局变量。<br>作用域：变量可以发挥作用的区域<br>全局作用域：在script标签内，函数外定义的作用域就是全局作用域。在全局作用域中定义的变量都是全局变量。<br>函数作用域：在函数中的区域叫做函数作用域，在函数作用域中定义的变量就是局部变量，只能在当前函数内访问。</p>
+<p><strong>在函数中，只有全局作用域和函数作用域，因为在if、while、for等语句中定义的变量都是全局变量。</strong></p>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><blockquote>
+<p>当函数执行完的时候，我们期望函数给我一些反馈（比如计算的结果），这个时候可以让函数返回一些东西。也就是返回值。函数通过return返回一个返回值</p>
+</blockquote>
+<p>返回值语法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//声明一个带返回值的函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params">形参<span class="number">1</span>, 形参<span class="number">2</span>, 形参...</span>)</span>&#123;</div><div class="line">  <span class="comment">//函数体</span></div><div class="line">  <span class="keyword">return</span> 返回值;</div><div class="line">&#125;</div><div class="line"><span class="comment">//可以通过变量来接收这个返回值</span></div><div class="line"><span class="keyword">var</span> 变量 = 函数名(实参<span class="number">1</span>, 实参<span class="number">2</span>, 实参<span class="number">3</span>);</div></pre></td></tr></table></figure>
+<p><strong>函数的调用结果就是返回值，因此我们可以直接对函数调用结果进行操作。</strong></p>
+<ul>
+<li>返回值详解<ul>
+<li>return后面可以跟任何数据类型</li>
+<li>return后面默认返回undefined</li>
+<li>return返回返回值之后，后面代码不执行，直接终止函数</li>
+</ul>
+</li>
+</ul>
+<h2 id="函数高级"><a href="#函数高级" class="headerlink" title="函数高级"></a>函数高级</h2><h3 id="函数调试"><a href="#函数调试" class="headerlink" title="函数调试"></a>函数调试</h3><blockquote>
+<p>在函数内部是可以继续调用别的函数的</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"fn1开始..."</span>);</div><div class="line">    fn2();</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"fn1结束..."</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn2</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"执行fn2的代码"</span>); </div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"执行fn2的代码"</span>);</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"执行fn2的代码"</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">//在函数1中调用了函数2</span></div><div class="line">fn1();</div></pre></td></tr></table></figure>
+<ul>
+<li>断点调试<ul>
+<li>F8：跳到下一个断点，如果后面没有断点了，那么代码直接执行完。</li>
+<li>F10：单步调试（跳过函数调用）</li>
+<li>F11：单步调试（进入函数调用）</li>
+<li>shift+F11：跳出函数调用</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数参数和返回值详解"><a href="#函数参数和返回值详解" class="headerlink" title="函数参数和返回值详解"></a>函数参数和返回值详解</h3><p>函数参数详解:<br>1.在JavaScript中，没有函数重载，只有覆盖，如果定义了两个同名的函数，后面的函数会覆盖掉前面的函数<br>2.在JavaScript，实参的个数可以和形参的个数不一样</p>
+<ul>
+<li>如果实参的个数多余形参的个数，多余的参数会被舍弃</li>
+<li>如果实参的个数少于形参的个数，缺少的实参是undefined</li>
+</ul>
+<h3 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h3><blockquote>
+<p>JS解析器执行js代码的时候，分为两个过程，预解析过程和代码执行过程</p>
+</blockquote>
+<ul>
+<li>预解析过程:<ul>
+<li>把变量的声明提升到当前作用域的最前面，只会提升声明，不会提升赋值</li>
+<li>把函数的声明提升到当前作用域的最前面，只会提升声明，不会提升调用  </li>
+<li>在提升的变量和函数中，如果名称有冲突，则函数覆盖变量，后者覆盖前者</li>
+</ul>
+</li>
+</ul>
+<h3 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h3><blockquote>
+<p>回调函数:把函数当成参数来使用，那么这个函数就叫回调函数</p>
+</blockquote>
+<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><p>什么是递归？<br>函数在自身内部调用自身的编程技巧叫做递归（一般还要有结束的条件,不添加条件，陷入无限递归 会出现栈内存溢出问题）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//例子：从前有座山，山里有座庙，庙里有个老和尚在给小和尚讲故事，故事是：</span></div><div class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">tellStory</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  n++;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"从前有座山，山里有座庙，庙里有个老和尚在给小和尚讲故事，故事是："</span>)</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">10</span>)&#123;</div><div class="line">    tellStory();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">tellStory();</div></pre></td></tr></table></figure>
+<h4 id="阶乘递归"><a href="#阶乘递归" class="headerlink" title="阶乘递归"></a>阶乘递归</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//阶乘的递归函数调用</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">jiecheng</span>(<span class="params">n</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">2</span>)&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> n*jiecheng(n<span class="number">-1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="斐波那契数列"><a href="#斐波那契数列" class="headerlink" title="斐波那契数列"></a>斐波那契数列</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">qiutuzi</span>(<span class="params">n</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">3</span>)&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> qiutuzi(n)+qiutuzi(n<span class="number">-1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -497,16 +335,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/02/JavaScript基本篇函数/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://huzipengs.github.io/2017/09/02/JavaScript基本篇函数/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/09/02/JavaScrippt基础篇数组/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScript基础篇数组
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/01/JavaScript面向对象/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript面向对象</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -526,103 +432,12 @@
 
 
 
-
   
-    <article id="post-JavaScript面向对象" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/01/JavaScript面向对象/">JavaScript面向对象</a>
-    </h1>
   
 
-        
-        <a href="/2017/09/01/JavaScript面向对象/" class="archive-article-date">
-  	<time datetime="2017-09-01T07:08:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3819649488,3232450590&fm=27&gp=0.jpg"></p>
-<h2 id="什么是面向对象？"><a href="#什么是面向对象？" class="headerlink" title="什么是面向对象？"></a>什么是面向对象？</h2><blockquote>
-<p>使用对象时，只关注对象提供的功能，不关注其内部细节  比如：JQuery </p>
-</blockquote>
-<ul>
-<li>面向对象的特点:<ul>
-<li>封装:不考虑内部实现，只考虑功能使用</li>
-<li>继承:从已有对象上，继承出新的对象</li>
-<li>多态:父类和子类之间具有相同的操作，但之间的操作又不太一样</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/09/01/JavaScript面向对象/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">待完善</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/01/JavaScript面向对象/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -645,8 +460,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
