@@ -17,7 +17,7 @@
 <meta property="og:description" content="所谓数组，就是将多个元素（通常是同一类型）按一定顺序排列放到一个集合中，那么这个集合我们就称之为数组。   为什么要有数组？ 我们知道，一个变量能够存储一个值，当我们想要存储多个值的时 候， 就可以使用数组。比如存储一个班级里面所有学生的姓名。使用数组可以对多个相同类型的值统一的管理，存储起来方便，操作的时候也会很方便。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1043933680,3149157016&fm=27&gp=0.jpg">
-<meta property="og:updated_time" content="2017-09-03T11:50:07.779Z">
+<meta property="og:updated_time" content="2017-09-03T12:04:56.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript整合之基础篇（二）">
 <meta name="twitter:description" content="所谓数组，就是将多个元素（通常是同一类型）按一定顺序排列放到一个集合中，那么这个集合我们就称之为数组。   为什么要有数组？ 我们知道，一个变量能够存储一个值，当我们想要存储多个值的时 候， 就可以使用数组。比如存储一个班级里面所有学生的姓名。使用数组可以对多个相同类型的值统一的管理，存储起来方便，操作的时候也会很方便。">
@@ -316,61 +316,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//例子：从前有座山，山里有座庙，庙里有个老和尚在给小和尚讲故事，故事是：</span></div><div class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">tellStory</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  n++;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"从前有座山，山里有座庙，庙里有个老和尚在给小和尚讲故事，故事是："</span>)</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">10</span>)&#123;</div><div class="line">    tellStory();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">tellStory();</div></pre></td></tr></table></figure>
 <h4 id="阶乘递归"><a href="#阶乘递归" class="headerlink" title="阶乘递归"></a>阶乘递归</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//阶乘的递归函数调用</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">jiecheng</span>(<span class="params">n</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">2</span>)&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> n*jiecheng(n<span class="number">-1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="斐波那契数列"><a href="#斐波那契数列" class="headerlink" title="斐波那契数列"></a>斐波那契数列</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">qiutuzi</span>(<span class="params">n</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(n&lt;<span class="number">3</span>)&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> qiutuzi(n)+qiutuzi(n<span class="number">-1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象?"></a>什么是对象?</h2><blockquote>
-<p>现实生活中：万物皆对象，对象是一个具体的事物，一个具体的事物就会有行为和特征。</p>
-</blockquote>
-<p>在javascript中：对象跟数组、函数一样，都是一种复杂数据类型，是一系列相关的属性的集合，可以很方便对变量和函数进行管理。</p>
-<ul>
-<li>事物的特征在对象中用属性来表示。</li>
-<li>事物的行为在对象中用方法来表示。   </li>
-</ul>
-<h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><h3 id="对象字面量"><a href="#对象字面量" class="headerlink" title="对象字面量"></a>对象字面量</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o = &#123;</div><div class="line">  name : <span class="string">"zs"</span>,</div><div class="line">  age : <span class="number">18</span>,</div><div class="line">  sex : <span class="literal">true</span>,</div><div class="line">  sayHi : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h3 id="键值对概念"><a href="#键值对概念" class="headerlink" title="键值对概念"></a>键值对概念</h3><blockquote>
-<p>键值对(Key-Value) 是一个常用的数据结构概念，通常又称为字典 (Dictionary) 或映射 (Map) 。该数据结构的特征是以空间换时间，通过键查询值能够提高效率</p>
-</blockquote>
-<h3 id="json对象"><a href="#json对象" class="headerlink" title="json对象"></a>json对象</h3><blockquote>
-<p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。同时，JSON是 JavaScript 原生格式，这意味着在 JavaScript 中处理 JSON数据跟处理对象是一样的。</p>
-</blockquote>
-<p>JSON的属性必须用双引号引号引起来，对象字面量可以省略</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//对于js对象来说，属性名的双引号是可以省略的。</span></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  name:<span class="string">"zs"</span>,</div><div class="line">  age:<span class="number">18</span>,</div><div class="line">  sex:<span class="string">"男"</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//json对象的属性名必须使用双引号括起来</span></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  <span class="string">"name"</span>:<span class="string">"zs"</span>,</div><div class="line">  <span class="string">"age"</span>:<span class="number">18</span>,</div><div class="line">  <span class="string">"sex"</span>:<span class="string">"男"</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//在js中，其实就可以把json当成javascript的对象，因此操作是一样。</span></div></pre></td></tr></table></figure>
-<h3 id="通过构造函数创建"><a href="#通过构造函数创建" class="headerlink" title="通过构造函数创建"></a>通过构造函数创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> hero = <span class="keyword">new</span> <span class="built_in">Object</span>();<span class="comment">//创建一个空的对象</span></div><div class="line">player.name = <span class="string">"孙悟空"</span>;<span class="comment">//给对象添加一个属性  .代表的</span></div><div class="line">player.skill = <span class="string">"龟派气功"</span>;</div><div class="line">player.attack = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"孙悟空攻击了弗利萨"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>1.this一定要出现在方法中才有意义，不在方法中的this没有意义<br>2.在方法中出现的this，指的是当前对象，即调用这个方法的对象</p>
-<h2 id="批量创建对象"><a href="#批量创建对象" class="headerlink" title="批量创建对象"></a>批量创建对象</h2><h3 id="工厂方式"><a href="#工厂方式" class="headerlink" title="工厂方式"></a>工厂方式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createStudent</span>(<span class="params">name,age,job</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> student = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">    student.name=name;</div><div class="line">    student.age = age;</div><div class="line">    student.job = job;</div><div class="line">    student.singing=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name+<span class="string">"正在唱歌……"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> student;</div><div class="line">&#125;</div><div class="line">  <span class="keyword">var</span> stu1 = createStudent(<span class="string">"小沈阳"</span>,<span class="number">36</span>,<span class="string">"actor"</span>);</div></pre></td></tr></table></figure>
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><blockquote>
-<p>构造函数，是一种特殊的函数，主要用来创建对象时初始化的对象，即为对象成员变量赋初始值，与new运算符一起使用</p>
-</blockquote>
-<p>1.构造函数用于创建一类对象，首字母要大写。<br>2.构造函数要和new一起使用才有意义。</p>
-<ul>
-<li>new<ul>
-<li>new会创建一个新的对象，类型时object</li>
-<li>new会让this指向这个新的对象</li>
-<li>执行构造函数，给新对象添加属性和方法</li>
-<li>new会返回新对象</li>
-</ul>
-</li>
-</ul>
-<h2 id="操作对象的属性"><a href="#操作对象的属性" class="headerlink" title="操作对象的属性"></a>操作对象的属性</h2><h3 id="语法"><a href="#语法" class="headerlink" title=".语法"></a>.语法</h3><pre><code>// 获取对象属性的语法：
-    // 对象.属性：对象的属性
-    // 1. 如果有这个属性，直接返回属性值
-    // 2. 如果没有这个属性，返回undefined
-// 设置对象的属性的语法
-    // 对象.属性 = 值
-    // 1. 如果对象有这个属性，修改这个属性
-    // 2. 如果对象没有这个属性，添加这个属性
-</code></pre><h3 id="语法-1"><a href="#语法-1" class="headerlink" title=".[]语法"></a>.[]语法</h3><p>也叫关联数组的方式，其实说白了就是把对象当成数组看待。</p>
-<pre><code>//获取对象属性
-    // 对象[&apos;下标&apos;]   ：把对象的属性当成下标
-//设置对象的属性
-    // 对象[&apos;下标&apos;] = &quot;值&quot;;
-</code></pre><p>二者的区别：当属性名是一个字符串存储在变量中的时候，只能使用关联数组的方式。</p>
-<h3 id="遍历对象"><a href="#遍历对象" class="headerlink" title="遍历对象"></a>遍历对象</h3><blockquote>
-<p>通过for…in语法遍历对象</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">obj[i] = i * <span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> obj) &#123;</div><div class="line"><span class="built_in">console</span>.log(key + <span class="string">"=="</span> + obj[key]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="值类型与引用类型"><a href="#值类型与引用类型" class="headerlink" title="值类型与引用类型"></a>值类型与引用类型</h3><blockquote>
-<p>值类型：简单数据类型，基本数据类型，在存储时，变量中存储的是值本身，因此叫做值类型。<br>引用类型：复杂数据类型，在存储是，变量中存储的仅仅是地址（引用），因此叫做引用数据类型。</p>
-</blockquote>
-
       
 
       
@@ -492,8 +437,8 @@
     </a>
   
   
-    <a href="/2017/09/01/JavaScript面向对象/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript面向对象</div>
+    <a href="/2017/09/02/JavaScript整合之基础篇（三）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript整合之基础篇（三）</div>
       <i class="icon-circle-right"></i>
     </a>
   
