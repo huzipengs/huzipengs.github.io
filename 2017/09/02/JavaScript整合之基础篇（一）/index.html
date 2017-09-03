@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="https://huzipengs.github.io">
   <title>JavaScript整合之基础篇（一） | zSay的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分:ECMAscript、DOM、BOECMAscript:定义了语法规范，是js的基础核心/解DOM:操作页面元素的API，通过使用这些api操作页面BO">
+  <meta name="description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分: ECMAscript:定义了语法规范，是js的基础核心/解释器 DOM:操作页面元素的API，通过使用这些api操作页面 BOM:操作浏览器功能的AP">
 <meta name="keywords" content="前端,JavaScript,整理,基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript整合之基础篇（一）">
 <meta property="og:url" content="https://huzipengs.github.io/2017/09/02/JavaScript整合之基础篇（一）/index.html">
 <meta property="og:site_name" content="zSay的博客">
-<meta property="og:description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分:ECMAscript、DOM、BOECMAscript:定义了语法规范，是js的基础核心/解DOM:操作页面元素的API，通过使用这些api操作页面BO">
+<meta property="og:description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分: ECMAscript:定义了语法规范，是js的基础核心/解释器 DOM:操作页面元素的API，通过使用这些api操作页面 BOM:操作浏览器功能的AP">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3378816792,2001844327&fm=27&gp=0.jpg">
-<meta property="og:updated_time" content="2017-09-03T11:35:09.502Z">
+<meta property="og:updated_time" content="2017-09-03T11:54:16.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript整合之基础篇（一）">
-<meta name="twitter:description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分:ECMAscript、DOM、BOECMAscript:定义了语法规范，是js的基础核心/解DOM:操作页面元素的API，通过使用这些api操作页面BO">
+<meta name="twitter:description" content="什么是JS语言？ JavaScript是一种运行在客户端的语言  客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行  JavaScript的三个组成成分: ECMAscript:定义了语法规范，是js的基础核心/解释器 DOM:操作页面元素的API，通过使用这些api操作页面 BOM:操作浏览器功能的AP">
 <meta name="twitter:image" content="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3378816792,2001844327&fm=27&gp=0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="zSay的博客" type="application/atom+xml">
@@ -178,9 +178,14 @@
 <p>JavaScript是一种运行在客户端的语言</p>
 </blockquote>
 <p>客户端:即接收服务的一端，与服务端相对应，在前端开发中，通常指的就浏览器<br>脚本语言:解释型语言，执行一行，解释一行，如果发现报错，代码就停止行</p>
-<blockquote>
-<p>JavaScript的三个组成成分:ECMAscript、DOM、BOECMAscript:定义了语法规范，是js的基础核心/解DOM:操作页面元素的API，通过使用这些api操作页面BOM:操作浏览器功能的API，通过使用这些api来操作页面元素</p>
-</blockquote>
+<ul>
+<li>JavaScript的三个组成成分:<ul>
+<li>ECMAscript:定义了语法规范，是js的基础核心/解释器</li>
+<li>DOM:操作页面元素的API，通过使用这些api操作页面</li>
+<li>BOM:操作浏览器功能的API，通过使用这些api来操作页面元素</li>
+</ul>
+</li>
+</ul>
 <a id="more"></a>
 <p>script标签书写Javascript代码有三种方式，第一种是直接在script标签中书写种是将代码写在js文件中，通过script进行引入。第三种为内嵌入htm中书写js，但不利于后期代码开发和维护，不推荐；</p>
 <blockquote>
