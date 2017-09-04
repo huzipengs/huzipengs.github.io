@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huzipengs.github.io">
-  <title>JavaScript整合之基础篇（三） | zSay的博客</title>
+  <title>神奇的Canvas | zSay的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="什么是对象? 现实生活中：万物皆对象，对象是一个具体的事物，一个具体的事物就会有行为和特征。  在javascript中：对象跟数组、函数一样，都是一种复杂数据类型，是一系列相关的属性的集合，可以很方便对变量和函数进行管理。  事物的特征在对象中用属性来表示。 事物的行为在对象中用方法来表示。">
-<meta name="keywords" content="前端,JavaScript,整理,基础">
+  <meta name="description" content="什么是canvas? canvas是HTML5提供的一种新标签 是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。 使用JavaScript在网页上绘制图像，本身不具备绘图功能。 拥有多种绘制路径，矩形、原型、字符以及添加图像的方法 HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。">
+<meta name="keywords" content="整理,HTML5,绘制图像">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript整合之基础篇（三）">
-<meta property="og:url" content="https://huzipengs.github.io/2017/09/02/JavaScript整合之基础篇（三）/index.html">
+<meta property="og:title" content="神奇的Canvas">
+<meta property="og:url" content="https://huzipengs.github.io/2017/09/02/神奇的canvas/index.html">
 <meta property="og:site_name" content="zSay的博客">
-<meta property="og:description" content="什么是对象? 现实生活中：万物皆对象，对象是一个具体的事物，一个具体的事物就会有行为和特征。  在javascript中：对象跟数组、函数一样，都是一种复杂数据类型，是一系列相关的属性的集合，可以很方便对变量和函数进行管理。  事物的特征在对象中用属性来表示。 事物的行为在对象中用方法来表示。">
+<meta property="og:description" content="什么是canvas? canvas是HTML5提供的一种新标签 是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。 使用JavaScript在网页上绘制图像，本身不具备绘图功能。 拥有多种绘制路径，矩形、原型、字符以及添加图像的方法 HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4030924514,3857204517&fm=27&gp=0.jpg">
-<meta property="og:updated_time" content="2017-09-04T01:41:53.598Z">
+<meta property="og:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=399026675,4287483057&fm=27&gp=0.jpg">
+<meta property="og:updated_time" content="2017-09-04T04:51:52.212Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript整合之基础篇（三）">
-<meta name="twitter:description" content="什么是对象? 现实生活中：万物皆对象，对象是一个具体的事物，一个具体的事物就会有行为和特征。  在javascript中：对象跟数组、函数一样，都是一种复杂数据类型，是一系列相关的属性的集合，可以很方便对变量和函数进行管理。  事物的特征在对象中用属性来表示。 事物的行为在对象中用方法来表示。">
-<meta name="twitter:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4030924514,3857204517&fm=27&gp=0.jpg">
+<meta name="twitter:title" content="神奇的Canvas">
+<meta name="twitter:description" content="什么是canvas? canvas是HTML5提供的一种新标签 是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。 使用JavaScript在网页上绘制图像，本身不具备绘图功能。 拥有多种绘制路径，矩形、原型、字符以及添加图像的方法 HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。">
+<meta name="twitter:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=399026675,4287483057&fm=27&gp=0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="zSay的博客" type="application/atom+xml">
   
@@ -153,19 +153,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JavaScript整合之基础篇（三）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-神奇的canvas" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JavaScript整合之基础篇（三）
+      神奇的Canvas
     </h1>
   
 
         
-        <a href="/2017/09/02/JavaScript整合之基础篇（三）/" class="archive-article-date">
+        <a href="/2017/09/02/神奇的canvas/" class="archive-article-date">
   	<time datetime="2017-09-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-02</time>
 </a>
         
@@ -173,170 +173,292 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4030924514,3857204517&fm=27&gp=0.jpg"></p>
-<h2 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象?"></a>什么是对象?</h2><blockquote>
-<p>现实生活中：万物皆对象，对象是一个具体的事物，一个具体的事物就会有行为和特征。</p>
-</blockquote>
-<p>在javascript中：对象跟数组、函数一样，都是一种复杂数据类型，是一系列相关的属性的集合，可以很方便对变量和函数进行管理。</p>
-<ul>
-<li>事物的特征在对象中用属性来表示。</li>
-<li>事物的行为在对象中用方法来表示。   </li>
+        <p><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=399026675,4287483057&fm=27&gp=0.jpg"></p>
+<h2 id="什么是canvas"><a href="#什么是canvas" class="headerlink" title="什么是canvas?"></a>什么是canvas?</h2><ul>
+<li>canvas是HTML5提供的一种新标签</li>
+<li>是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。</li>
+<li>使用JavaScript在网页上绘制图像，本身不具备绘图功能。</li>
+<li>拥有多种绘制路径，矩形、原型、字符以及添加图像的方法</li>
+<li>HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。</li>
 </ul>
 <a id="more"></a>
-<h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><h3 id="对象字面量"><a href="#对象字面量" class="headerlink" title="对象字面量"></a>对象字面量</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o = &#123;</div><div class="line">  name : <span class="string">"zs"</span>,</div><div class="line">  age : <span class="number">18</span>,</div><div class="line">  sex : <span class="literal">true</span>,</div><div class="line">  sayHi : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h3 id="键值对概念"><a href="#键值对概念" class="headerlink" title="键值对概念"></a>键值对概念</h3><blockquote>
-<p>键值对(Key-Value) 是一个常用的数据结构概念，通常又称为字典 (Dictionary) 或映射 (Map) 。该数据结构的特征是以空间换时间，通过键查询值能够提高效率</p>
-</blockquote>
-<h3 id="json对象"><a href="#json对象" class="headerlink" title="json对象"></a>json对象</h3><blockquote>
-<p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。同时，JSON是 JavaScript 原生格式，这意味着在 JavaScript 中处理 JSON数据跟处理对象是一样的。</p>
-</blockquote>
-<p>JSON的属性必须用双引号引号引起来，对象字面量可以省略</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//对于js对象来说，属性名的双引号是可以省略的。</span></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  name:<span class="string">"zs"</span>,</div><div class="line">  age:<span class="number">18</span>,</div><div class="line">  sex:<span class="string">"男"</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//json对象的属性名必须使用双引号括起来</span></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  <span class="string">"name"</span>:<span class="string">"zs"</span>,</div><div class="line">  <span class="string">"age"</span>:<span class="number">18</span>,</div><div class="line">  <span class="string">"sex"</span>:<span class="string">"男"</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//在js中，其实就可以把json当成javascript的对象，因此操作是一样。</span></div></pre></td></tr></table></figure>
-<h3 id="通过构造函数创建"><a href="#通过构造函数创建" class="headerlink" title="通过构造函数创建"></a>通过构造函数创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> hero = <span class="keyword">new</span> <span class="built_in">Object</span>();<span class="comment">//创建一个空的对象</span></div><div class="line">player.name = <span class="string">"孙悟空"</span>;<span class="comment">//给对象添加一个属性  .代表的</span></div><div class="line">player.skill = <span class="string">"龟派气功"</span>;</div><div class="line">player.attack = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"孙悟空攻击了弗利萨"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>1.this一定要出现在方法中才有意义，不在方法中的this没有意义<br>2.在方法中出现的this，指的是当前对象，即调用这个方法的对象</p>
-<h2 id="批量创建对象"><a href="#批量创建对象" class="headerlink" title="批量创建对象"></a>批量创建对象</h2><h3 id="工厂方式"><a href="#工厂方式" class="headerlink" title="工厂方式"></a>工厂方式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createStudent</span>(<span class="params">name,age,job</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> student = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">    student.name=name;</div><div class="line">    student.age = age;</div><div class="line">    student.job = job;</div><div class="line">    student.singing=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name+<span class="string">"正在唱歌……"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> student;</div><div class="line">&#125;</div><div class="line">  <span class="keyword">var</span> stu1 = createStudent(<span class="string">"小沈阳"</span>,<span class="number">36</span>,<span class="string">"actor"</span>);</div></pre></td></tr></table></figure>
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><blockquote>
-<p>构造函数，是一种特殊的函数，主要用来创建对象时初始化的对象，即为对象成员变量赋初始值，与new运算符一起使用</p>
-</blockquote>
-<p>1.构造函数用于创建一类对象，首字母要大写。<br>2.构造函数要和new一起使用才有意义。</p>
-<ul>
-<li>new<ul>
-<li>new会创建一个新的对象，类型时object</li>
-<li>new会让this指向这个新的对象</li>
-<li>执行构造函数，给新对象添加属性和方法</li>
-<li>new会返回新对象</li>
+<h2 id="Canvas标签"><a href="#Canvas标签" class="headerlink" title="Canvas标签"></a>Canvas标签</h2><h3 id="canvas标签语法和属性"><a href="#canvas标签语法和属性" class="headerlink" title="canvas标签语法和属性"></a>canvas标签语法和属性</h3><ul>
+<li>标签名canvas,需要进行闭合，就是一普通的html标签</li>
+<li>可以设置width和height属性，但是属性值<strong>单位必须是px</strong>,否则忽略</li>
+<li>width和height:默认300*150像素</li>
+<li>注意:<ul>
+<li>不要用CSS控制它的宽和高，会走出图片拉伸</li>
+<li>重新设置canvas标签的宽高属性会让画布擦除所有的内容</li>
+<li>可以给canvas画布设置背景色</li>
 </ul>
 </li>
 </ul>
-<h2 id="操作对象的属性"><a href="#操作对象的属性" class="headerlink" title="操作对象的属性"></a>操作对象的属性</h2><h3 id="语法"><a href="#语法" class="headerlink" title=".语法"></a>.语法</h3><pre><code>// 获取对象属性的语法：
-    // 对象.属性：对象的属性
-    // 1. 如果有这个属性，直接返回属性值
-    // 2. 如果没有这个属性，返回undefined
-// 设置对象的属性的语法
-    // 对象.属性 = 值
-    // 1. 如果对象有这个属性，修改这个属性
-    // 2. 如果对象没有这个属性，添加这个属性
-</code></pre><h3 id="语法-1"><a href="#语法-1" class="headerlink" title="[]语法"></a>[]语法</h3><p>也叫关联数组的方式，其实说白了就是把对象当成数组看待。</p>
-<pre><code>//获取对象属性
-    // 对象[&apos;下标&apos;]   ：把对象的属性当成下标
-//设置对象的属性
-    // 对象[&apos;下标&apos;] = &quot;值&quot;;
-</code></pre><p>二者的区别：当属性名是一个字符串存储在变量中的时候，只能使用关联数组的方式。</p>
-<h3 id="遍历对象"><a href="#遍历对象" class="headerlink" title="遍历对象"></a>遍历对象</h3><blockquote>
-<p>通过for…in语法遍历对象</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">obj[i] = i * <span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> obj) &#123;</div><div class="line"><span class="built_in">console</span>.log(key + <span class="string">"=="</span> + obj[key]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="值类型与引用类型"><a href="#值类型与引用类型" class="headerlink" title="值类型与引用类型"></a>值类型与引用类型</h3><blockquote>
-<p>值类型：简单数据类型，基本数据类型，在存储时，变量中存储的是值本身，因此叫做值类型。<br>引用类型：复杂数据类型，在存储是，变量中存储的仅仅是地址（引用），因此叫做引用数据类型。</p>
-</blockquote>
-<h2 id="内置对象"><a href="#内置对象" class="headerlink" title="内置对象"></a>内置对象</h2><blockquote>
-<p>JS内置对象就是指Javascript自带的一些对象，供开发者使用，这些对象提供了一些常用的的功能。</p>
-</blockquote>
-<p>常见的内置对象有Math、String、Array、Date等</p>
-<h3 id="Math对象"><a href="#Math对象" class="headerlink" title="Math对象"></a>Math对象</h3><blockquote>
-<p>Math对象中封装很多与数学相关的属性和方法</p>
-</blockquote>
-<ul>
-<li>属性</li>
+<h3 id="浏览器不兼容处理"><a href="#浏览器不兼容处理" class="headerlink" title="浏览器不兼容处理"></a>浏览器不兼容处理</h3><ul>
+<li>ie9以上才支持canvas, 其他chrome、ff、苹果浏览器等都支持</li>
+<li>只要浏览器兼容canvas，那么就会支持绝大部分api(个别最新api除外)</li>
+<li>移动端的兼容情况非常理想，基本上随便使用</li>
+<li>2d的支持的都非常好，3d（webgl）ie11才支持，其他都支持</li>
+<li>如果浏览器不兼容，最好进行友好提示   </li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.PI</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"cavsElem"</span>&gt;</span></div><div class="line">    你的浏览器不支持canvas，请升级浏览器.浏览器不支持，显示此行文本</div><div class="line"><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
-<li>最大值/最小值</li>
+<li>浏览器不兼容，可以使用<em>flash</em>等手段进行<strong>优雅降级</strong></li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.max();</div><div class="line"><span class="built_in">Math</span>.min();</div></pre></td></tr></table></figure>
+<h2 id="canvas绘图上下文context"><a href="#canvas绘图上下文context" class="headerlink" title="canvas绘图上下文context"></a>canvas绘图上下文context</h2><h3 id="2-2-1-Context：Canvas的上下文、绘制环境"><a href="#2-2-1-Context：Canvas的上下文、绘制环境" class="headerlink" title="2.2.1 Context：Canvas的上下文、绘制环境"></a>2.2.1 Context：Canvas的上下文、绘制环境</h3><ul>
+<li>Canvas自身无法绘制任何内容。Canvas的绘图是使用JavaScript操作的。</li>
+<li>Context对象就是JavaScript操作Canvas的接口。</li>
+</ul>
+<p>使用[CanvasElement].getContext(‘2d’)来获取2D绘图上下文</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas  = <span class="built_in">document</span>.getElementById( <span class="string">'cavsElem'</span> ); <span class="comment">//获得画布</span></div><div class="line"><span class="keyword">var</span> ctx = canvas.getContext( <span class="string">'2d'</span> );<span class="comment">//注意：2d小写， 3d：webgl</span></div></pre></td></tr></table></figure>
+<h2 id="基本的绘制路径"><a href="#基本的绘制路径" class="headerlink" title="基本的绘制路径"></a>基本的绘制路径</h2><h3 id="canvas坐标系"><a href="#canvas坐标系" class="headerlink" title="canvas坐标系"></a>canvas坐标系</h3><p>canvas坐标系，从最左上角，0开始，x向右增大，y向下增大</p>
+<h3 id="设置绘制起点（moveTo）"><a href="#设置绘制起点（moveTo）" class="headerlink" title="设置绘制起点（moveTo）"></a>设置绘制起点（moveTo）</h3><ul>
+<li>语法：ctx.moveTo(x, y); </li>
+<li>解释：设置上下文绘制路径的起点。相当于移动画笔到某个位置</li>
+<li>参数：x,y 都是相对于 canvas盒子的最左上角。</li>
+<li>注意：<strong>绘制线段前必须先设置起点。</strong></li>
+</ul>
+<h3 id="绘制直线（lineTo）"><a href="#绘制直线（lineTo）" class="headerlink" title="绘制直线（lineTo）"></a>绘制直线（lineTo）</h3><ul>
+<li>语法: ctx.lineTo(x,y);</li>
+<li>解释: 从x,y的位置绘制一条直线到起点或者上一个线头点</li>
+<li>参数: x,y线头点坐标</li>
+</ul>
+<h3 id="路径开始和闭合"><a href="#路径开始和闭合" class="headerlink" title="路径开始和闭合"></a>路径开始和闭合</h3><ul>
+<li>开始路径: ctx.benginPath();</li>
+<li>闭合路径: ctx.closePath();</li>
+<li>解释:如果是绘制不同状态的线段或者形状，必须使用开始新路径的方法把不同的绘制操作隔开，闭合路径会自动把最后的线头和开始的线头连在一起</li>
+<li>beginPath:核心的作用是将不同绘制的形状进行隔离，每次执行此方法，表示重新绘制一个路径，跟之前的绘制可以进行分开样式设置和管理</li>
+</ul>
+<h3 id="描边"><a href="#描边" class="headerlink" title="描边"></a>描边</h3><ul>
+<li>语法: ctx.stroke();</li>
+<li>解释: 根据路径绘制线，路径只是草稿，真正绘制线必须执行stroke</li>
+</ul>
+<h3 id="canvas绘制的基本步骤"><a href="#canvas绘制的基本步骤" class="headerlink" title="canvas绘制的基本步骤"></a>canvas绘制的基本步骤</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//===============基本绘制api====================</span></div><div class="line"><span class="comment">//获得画布</span></div><div class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.querySelector(<span class="string">'#cavsElem'</span>);</div><div class="line"><span class="keyword">var</span> ctx = canvas.getContext(<span class="string">'2d'</span>);  <span class="comment">//获得上下文</span></div><div class="line"></div><div class="line">canvas.width = <span class="number">900</span>;     <span class="comment">//设置标签的属性宽高</span></div><div class="line">canvas.height = <span class="number">600</span>;    <span class="comment">//千万不要用 canvas.style.height</span></div><div class="line">canvas.style.border = <span class="string">"1px solid #000"</span>;</div><div class="line"></div><div class="line"><span class="comment">//绘制三角形</span></div><div class="line">ctx.beginPath();        <span class="comment">//开始路径</span></div><div class="line">ctx.moveTo(<span class="number">100</span>,<span class="number">100</span>);    <span class="comment">//三角形，左顶点</span></div><div class="line">ctx.lineTo(<span class="number">300</span>, <span class="number">100</span>);   <span class="comment">//右顶点</span></div><div class="line">ctx.lineTo(<span class="number">300</span>, <span class="number">300</span>);   <span class="comment">//底部的点</span></div><div class="line">ctx.closePath();        <span class="comment">//结束路径</span></div><div class="line">ctx.stroke();           <span class="comment">//描边路径</span></div></pre></td></tr></table></figure>
+<h3 id="填充（fill）"><a href="#填充（fill）" class="headerlink" title="填充（fill）"></a>填充（fill）</h3><ul>
+<li>语法：ctx.fill(); </li>
+<li>解释：填充，是将闭合的路径的内容填充具体的颜色。默认黑色。</li>
+<li>注意：交叉路径的填充问题，“非零环绕原则”，顺逆时针穿插次数决定是否填充。</li>
+</ul>
+<h3 id="快速创建矩形rect-方法"><a href="#快速创建矩形rect-方法" class="headerlink" title="快速创建矩形rect()方法"></a>快速创建矩形rect()方法</h3><ul>
+<li>语法: ctx.rect(x,y,width,height);</li>
+<li>解释: x,y是矩形左上角坐标，width和height都是以像素计算</li>
+<li>rect方法 只是规划了矩形的路径，并没有填充和描边</li>
+</ul>
+<h3 id="快速创建描边矩形和填充矩形"><a href="#快速创建描边矩形和填充矩形" class="headerlink" title="快速创建描边矩形和填充矩形"></a>快速创建描边矩形和填充矩形</h3><ul>
+<li>语法: ctx.strokeRect(x,y,width,height);<ul>
+<li>注意此方法绘制完路径后立即进行stroke绘制</li>
+</ul>
+</li>
+<li>语法: ctx.fillRect(x,y,width,height);<ul>
+<li>注意此方法执行完毕后，立即对当前矩形进行fill填充</li>
+</ul>
+</li>
+</ul>
+<h3 id="清除矩形-clearRect"><a href="#清除矩形-clearRect" class="headerlink" title="清除矩形(clearRect)"></a>清除矩形(clearRect)</h3><ul>
+<li>语法: ctx.clearRect(x,y,width,height);</li>
+<li>解释: 清除某个矩形内的绘制的内容，相当于橡皮擦</li>
+</ul>
+<h2 id="绘制圆形-arc"><a href="#绘制圆形-arc" class="headerlink" title="绘制圆形(arc)"></a>绘制圆形(arc)</h2><ul>
+<li>概述：arc() 方法创建弧/曲线（用于创建圆或部分圆）。<ul>
+<li>语法：ctx.arc(x,y,r,sAngle,eAngle,counterclockwise);</li>
+<li>解释：<ul>
+<li>x,y：圆心坐标。 </li>
+<li>r：半径大小。</li>
+<li>sAngle:绘制开始的角度。 圆心到最右边点是0度，顺时针方向弧度增大。</li>
+<li>eAngel:结束的角度，注意是弧度。π</li>
+<li>counterclockwise：是否是逆时针。true是逆时针，false：顺时针</li>
+<li>弧度和角度的转换公式： rad = deg*Math.PI/180;  </li>
+<li>在Math提供的方法中<strong>sin、cos等都使用的弧度</strong>   </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="绘制文字"><a href="#绘制文字" class="headerlink" title="绘制文字"></a>绘制文字</h2><h3 id="绘制上下文的文字属性"><a href="#绘制上下文的文字属性" class="headerlink" title="绘制上下文的文字属性"></a>绘制上下文的文字属性</h3><ul>
+<li>font:设置或返回文本内容的当前字体属性<ul>
+<li>font 属性使用的语法与 CSS font 属性相同。<br>例如:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.font = <span class="string">"18px '微软雅黑'"</span>;</div></pre></td></tr></table></figure>
 <ul>
-<li>取整</li>
+<li>textAlign       设置或返回文本内容的当前对齐方式<ul>
+<li>start :    默认。文本在指定的位置开始。</li>
+<li>end   :    文本在指定的位置结束。</li>
+<li>center:    文本的中心被放置在指定的位置。</li>
+<li>left  :    文本左对齐。</li>
+<li>right :    文本右对齐。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.ceil();<span class="comment">//天花板，向上取整</span></div><div class="line"><span class="built_in">Math</span>.floor();<span class="comment">//地板，向下取整</span></div><div class="line"><span class="built_in">Math</span>.round();<span class="comment">//四舍五入，如果是.5，则取更大的那个数</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.textAlign = <span class="string">'left'</span>;</div></pre></td></tr></table></figure></p>
 <ul>
-<li>绝对值</li>
+<li>textBaseline      设置或返回在绘制文本时使用的当前文本基线   <ul>
+<li>alphabetic ：   默认。文本基线是普通的字母基线。</li>
+<li>top        ：   文本基线是 em 方框的顶端。。</li>
+<li>hanging    ：   文本基线是悬挂基线。</li>
+<li>middle     ：   文本基线是 em 方框的正中。</li>
+<li>ideographic：   文本基线是em基线。</li>
+<li>bottom     ：   文本基线是 em 方框的底端。     </li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.abs();<span class="comment">//求绝对值</span></div></pre></td></tr></table></figure>
-<ul>
-<li>次幂和平方</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.pow(num, power);<span class="comment">//求num的power次方</span></div><div class="line"><span class="built_in">Math</span>.sqrt(num);<span class="comment">//对num开平方</span></div></pre></td></tr></table></figure>
-<ul>
-<li>随机数</li>
+<p>例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">ctx.textBaseline = <span class="string">'top'</span>;</div><div class="line"><span class="string">``</span><span class="string">`  </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">### 上下文绘制文字方法  </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">* ctx.fillText()      在画布上绘制“被填充的”文本</span></div><div class="line"><span class="string">* ctx.strokeText()    在画布上绘制文本（无填充）</span></div><div class="line"><span class="string">* ctx.measureText()   返回包含指定文本宽度的对象</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">`</span><span class="string">``</span>javascript</div><div class="line">    <span class="comment">//综合代码：</span></div><div class="line">    ctx.moveTo( <span class="number">300</span>, <span class="number">300</span> );</div><div class="line">    ctx.fillStyle = <span class="string">"purple"</span>;               <span class="comment">//设置填充颜色为紫色</span></div><div class="line">    ctx.font = <span class="string">'20px "微软雅黑"'</span>;           <span class="comment">//设置字体</span></div><div class="line">    ctx.textBaseline = <span class="string">"bottom"</span>;            <span class="comment">//设置字体底线对齐绘制基线</span></div><div class="line">    ctx.textAlign = <span class="string">"left"</span>;                 <span class="comment">//设置字体对齐的方式</span></div><div class="line">    <span class="comment">//ctx.strokeText( "left", 450, 400 );</span></div><div class="line">    ctx.fillText( <span class="string">"Top-g"</span>, <span class="number">100</span>, <span class="number">300</span> );        <span class="comment">//填充文字</span></div></pre></td></tr></table></figure></p>
+<h2 id="绘制图片（drawImage）"><a href="#绘制图片（drawImage）" class="headerlink" title="绘制图片（drawImage）"></a>绘制图片（drawImage）</h2><h3 id="基本绘制图片的方式"><a href="#基本绘制图片的方式" class="headerlink" title="基本绘制图片的方式"></a>基本绘制图片的方式</h3><ul>
+<li>context.drawImage(img,x,y);</li>
+<li>参数说明： x,y 绘制图片左上角的坐标， img是绘制图片的dom对象。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Math</span>.random();<span class="comment">//返回一个[0,1)之间的数，能取到0，取不到1</span></div><div class="line"><span class="comment">//求x-y之间的随机整数</span></div><div class="line"><span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*(y-x))+x;</div></pre></td></tr></table></figure>
-<h3 id="Date对象"><a href="#Date对象" class="headerlink" title="Date对象"></a>Date对象</h3><blockquote>
-<p>Date对象用来处理日期和时间</p>
-</blockquote>
-<ul>
-<li>创建一个时间对象</li>
+<h3 id="在画布上绘制图像，并规定图像的宽度和高度"><a href="#在画布上绘制图像，并规定图像的宽度和高度" class="headerlink" title="在画布上绘制图像，并规定图像的宽度和高度"></a>在画布上绘制图像，并规定图像的宽度和高度</h3><ul>
+<li>context.drawImage(img,x,y,width,height);   </li>
+<li>参数说明：width 绘制图片的宽度，  height：绘制图片的高度</li>
+<li>如果指定宽高，最好成比例，不然图片会被拉伸</li>
+<li>等比公式:toH = Height * toW   /  Width;  //等比 <ul>
+<li>设置高 = 原高度 * 设置宽/ 原宽度;</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();<span class="comment">//使用构造函数创建一个当前时间的对象</span></div><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"2017-03-22"</span>);<span class="comment">//创建一个指定时间的日期对象</span></div><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"2017-03-22 00:52:34"</span>);<span class="comment">//创建一个指定时间的日期对象</span></div></pre></td></tr></table></figure>
-<ul>
-<li>日期格式化(了解)</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">date.toString();<span class="comment">//默认的日期格式</span></div><div class="line">date.toDateString();</div><div class="line">date.toTimeString();</div></pre></td></tr></table></figure>
-<ul>
-<li>获取日期的指定部分</li>
+<h3 id="图片裁剪，并在画布上定位被剪切的部分"><a href="#图片裁剪，并在画布上定位被剪切的部分" class="headerlink" title="图片裁剪，并在画布上定位被剪切的部分"></a>图片裁剪，并在画布上定位被剪切的部分</h3><ul>
+<li>context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);</li>
+<li>参数说明：<ul>
+<li>sx,sy 裁剪的左上角坐标，</li>
+<li>swidth：裁剪图片的高度。 sheight:裁剪的高度 </li>
+<li>其他同上</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">getMilliseconds();<span class="comment">//获取毫秒值</span></div><div class="line">getSeconds();<span class="comment">//获取秒</span></div><div class="line">getMinutes();<span class="comment">//获取分钟</span></div><div class="line">getHours();<span class="comment">//获取小时</span></div><div class="line">getDay();<span class="comment">//获取星期，0-6    0：星期天</span></div><div class="line">getDate();<span class="comment">//获取日，即当月的第几天</span></div><div class="line">getMonth();<span class="comment">//返回月份，注意从0开始计算，这个地方坑爹，0-11</span></div><div class="line">getFullYear();<span class="comment">//返回4位的年份  如 2016</span></div></pre></td></tr></table></figure>
-<ul>
-<li>时间戳</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = +<span class="keyword">new</span> <span class="built_in">Date</span>();<span class="comment">//1970年01月01日00时00分00秒起至现在的总毫秒数</span></div></pre></td></tr></table></figure>
-<h3 id="Array对象"><a href="#Array对象" class="headerlink" title="Array对象"></a>Array对象</h3><blockquote>
-<p>数组对象在javascript中非常的常用</p>
-</blockquote>
-<ul>
-<li>数组转换</li>
+<h3 id="用JavaScript创建img对象"><a href="#用JavaScript创建img对象" class="headerlink" title="用JavaScript创建img对象"></a>用JavaScript创建img对象</h3><p>第一种方式: </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.getElementById(<span class="string">"imgId"</span>);</div></pre></td></tr></table></figure>
+<p>第二种方式:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> img = <span class="keyword">new</span> Image();<span class="comment">//这个就是 img标签的dom对象</span></div><div class="line">img.src = <span class="string">"imgs/arc.gif"</span>;</div><div class="line">img.alt = <span class="string">"文本信息"</span>;</div><div class="line">img.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//图片加载完成后，执行此方法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Canvas颜色样式和阴影"><a href="#Canvas颜色样式和阴影" class="headerlink" title="Canvas颜色样式和阴影"></a>Canvas颜色样式和阴影</h2><h3 id="设置填充和描边的颜色"><a href="#设置填充和描边的颜色" class="headerlink" title="设置填充和描边的颜色"></a>设置填充和描边的颜色</h3><ul>
+<li>fillStyle  : 设置或返回用于填充绘画的颜色</li>
+<li>strokeStyle: 设置或返回用于笔触的颜色</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//语法：array.join(separator)</span></div><div class="line"><span class="comment">//作用：将数组的值拼接成字符串</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line">arr.join();<span class="comment">//不传参数，默认按【,】进行拼接</span></div><div class="line">arr.join(<span class="string">"-"</span>);<span class="comment">//按【-】进行拼接</span></div></pre></td></tr></table></figure>
-<ul>
-<li>数组的增删操作</li>
+<p>以上两个值都可以接受颜色名,16进制数据，rgb值，甚至rgba.<br>一般先进行设置样式然后进行绘制。</p>
+<p>例如:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ctx.strokeStyle = <span class="string">"red"</span>;</div><div class="line">ctx.strokeStyle = <span class="string">"#ccc"</span>;</div><div class="line">ctx.strokeStyle = <span class="string">"rgb(255,0,0)"</span>;</div><div class="line">ctx.strokeStyle = <span class="string">"rgba(255,0,0,6)"</span>;</div></pre></td></tr></table></figure>
+<h3 id="设置阴影"><a href="#设置阴影" class="headerlink" title="设置阴影:"></a>设置阴影:</h3><ul>
+<li>类比于CSS3的阴影。</li>
+<li>shadowColor  :   设置或返回用于阴影的颜色</li>
+<li>shadowBlur   :   设置或返回用于阴影的模糊级别,大于1的正整数，数值越高，模糊程度越大</li>
+<li>shadowOffsetX:   设置或返回阴影距形状的水平距离</li>
+<li>shadowOffsetY:   设置或返回阴影距形状的垂直距离</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">array.push();<span class="comment">//从后面添加元素，返回新数组的length</span></div><div class="line">array.pop();<span class="comment">//从数组的后面删除元素，返回删除的那个元素</span></div><div class="line">array.unshift();<span class="comment">//从数组的前面的添加元素，返回新数组的长度</span></div><div class="line">array.shift();<span class="comment">//从数组的最前面删除元素，返回删除的那个元素</span></div></pre></td></tr></table></figure>
-<ul>
-<li>数组的翻转和排序</li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ctx.fillStyle = <span class="string">"rgba(255,0,0, .9)"</span></div><div class="line">ctx.shadowColor = <span class="string">"teal"</span>;</div><div class="line">ctx.shadowBlur = <span class="number">10</span>;</div><div class="line">ctx.shadowOffsetX = <span class="number">10</span>;</div><div class="line">ctx.shadowOffsetY = <span class="number">10</span>;</div><div class="line">ctx.fillRect(<span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>);</div></pre></td></tr></table></figure>
+<h2 id="复杂样式"><a href="#复杂样式" class="headerlink" title="复杂样式"></a>复杂样式</h2><h3 id="创建线性渐变的样式"><a href="#创建线性渐变的样式" class="headerlink" title="创建线性渐变的样式"></a>创建线性渐变的样式</h3><ul>
+<li>一般不用，都是用图片代替，canvas绘制图片效率更高。</li>
+<li>线性渐变可以用于 矩形、圆形、文字等颜色样式</li>
+<li>线性渐变是一个对象</li>
+<li>语法：ctx.createLinearGradient(x0,y0,x1,y1); //参数：x0,y0起始坐标，x1,y1结束坐标</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">array.reverse();<span class="comment">//翻转数组</span></div><div class="line">array.sort();<span class="comment">//数组的排序，默认按照字母顺序排序</span></div><div class="line"><span class="comment">//sort方法可以传递一个函数作为参数，这个参数用来控制数组如何进行排序</span></div><div class="line">arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line">  <span class="comment">//如果返回值&gt;0,则交换位置</span></div><div class="line">  <span class="keyword">return</span> a - b;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>数组的拼接和截取</li>
+<p>例如:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//创建线性渐变的对象，</span></div><div class="line"><span class="keyword">var</span> grd=ctx.createLinearGradient(<span class="number">0</span>,<span class="number">0</span>,<span class="number">170</span>,<span class="number">0</span>);</div><div class="line">grd.addColorStop(<span class="number">0</span>,<span class="string">"black"</span>);  <span class="comment">//添加一个渐变颜色，第一个参数介于 0.0 与 1.0 之间的值，表示渐变中开始与结束之间的位置。</span></div><div class="line">grd.addColorStop(<span class="number">1</span>,<span class="string">"white"</span>);  <span class="comment">//添加一个渐变颜色</span></div><div class="line">ctx.fillStyle =grd;           <span class="comment">//关键点，把渐变设置到 填充的样式</span></div></pre></td></tr></table></figure>
+<h3 id="设置圆形渐变（径向渐变）"><a href="#设置圆形渐变（径向渐变）" class="headerlink" title="设置圆形渐变（径向渐变）"></a>设置圆形渐变（径向渐变）</h3><ul>
+<li>创建放射状/圆形渐变对象。可以填充文本、形状等</li>
+<li>context.createRadialGradient(x0,y0,r0,x1,y1,r1);</li>
+<li>参数详解：<ul>
+<li>x0:  渐变的开始圆的 x 坐标</li>
+<li>y0:  渐变的开始圆的 y 坐标</li>
+<li>r0:  开始圆的半径</li>
+<li>x1:  渐变的结束圆的 x 坐标</li>
+<li>y1:  渐变的结束圆的 y 坐标</li>
+<li>r1:  结束圆的半径</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//concat：数组合并，不会影响原来的数组，会返回一个新数组。</span></div><div class="line"><span class="keyword">var</span> newArray = array.concat(array2);</div><div class="line"><span class="comment">//slice:数组切分，复制数组的一部分到一个新数组，并返回这个数组</span></div><div class="line"><span class="comment">//原来的数组不受影响，包含begin，不包含end</span></div><div class="line"><span class="keyword">var</span> newArray = array.slice(begin, end);</div><div class="line"><span class="comment">//splice:数组拼接，以新元素来替换旧元素，以此来修改数组的容，常用语删除数组的某些项</span></div><div class="line"><span class="comment">//start:开始位置  deleteCount:删除的个数  items:替换的内容</span></div><div class="line">array.slice(start, deleteCount, [items]);</div></pre></td></tr></table></figure>
-<ul>
-<li>数组查找元素</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//indexOf方法用来查找数组中某个元素第一次出现的位置，如果找不到，返回-1</span></div><div class="line">array.indexOf(search, [fromIndex]);</div><div class="line"><span class="comment">//astIndexOf()从后面开始查找数组中元素出现位置,如果找不到，返回-1</span></div><div class="line">array.lastIndexOf(search, [fromIndex]);</div></pre></td></tr></table></figure>
-<ul>
-<li>清空数组</li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> rlg = ctx.createRadialGradient(<span class="number">300</span>,<span class="number">300</span>,<span class="number">10</span>,<span class="number">300</span>,<span class="number">300</span>,<span class="number">200</span>);</div><div class="line">rlg.addColorStop(<span class="number">0</span>, <span class="string">'teal'</span>);    <span class="comment">//添加一个渐变颜色</span></div><div class="line">rlg.addColorStop(<span class="number">.4</span>, <span class="string">'navy'</span>);</div><div class="line">rlg.addColorStop(<span class="number">1</span>, <span class="string">'purple'</span>);</div><div class="line">ctx.fillStyle = rlg;<span class="comment">//设置 填充样式为延续渐变的样式</span></div><div class="line">ctx.fillRect(<span class="number">100</span>, <span class="number">100</span>, <span class="number">500</span>, <span class="number">500</span>);</div></pre></td></tr></table></figure>
+<h3 id="绘制背景图"><a href="#绘制背景图" class="headerlink" title="绘制背景图"></a>绘制背景图</h3><ul>
+<li>ctx.createPattern(img,repeat) 方法在指定的方向内重复指定的元素了解</li>
+<li>第一参数：设置平铺背景的图片，第二个背景平铺的方式。<ul>
+<li>image    ：   规定要使用的图片、画布或视频元素。</li>
+<li>repeat   ：   默认。该模式在水平和垂直方向重复。</li>
+<li>repeat-x ：   该模式只在水平方向重复。</li>
+<li>repeat-y ：   该模式只在垂直方向重复。</li>
+<li>no-repeat：   该模式只显示一次（不重复）。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">array.splice(<span class="number">0</span>,array.leng);<span class="comment">//删除数组中所有的元素</span></div><div class="line">array.length = <span class="number">0</span>;<span class="comment">//直接修改数组的长度</span></div><div class="line">array = [];<span class="comment">//将数组赋值为一个空数组，推荐</span></div></pre></td></tr></table></figure>
-<h3 id="String对象"><a href="#String对象" class="headerlink" title="String对象"></a>String对象</h3><blockquote>
-<p>字符串可以看成一个字符数组，y因此字符串也有长度，也可以进行遍历，String对象很多方法的名字和Array的一样,可以少记很多单词。</p>
-</blockquote>
-<ul>
-<li>查找字符以及字符编码的方法</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">charAt();<span class="comment">//在字符串中根据下标找对应字符</span></div><div class="line">charCodeAt();<span class="comment">//在字符串中根据下标找对应字符的字符编码</span></div><div class="line"><span class="built_in">String</span>.fromCharCode();<span class="comment">//根据字符编码返回对应字符</span></div></pre></td></tr></table></figure>
-<ul>
-<li>查找指定字符串</li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ctx=c.getContext(<span class="string">"2d"</span>);</div><div class="line"><span class="keyword">var</span> img=<span class="built_in">document</span>.getElementById(<span class="string">"lamp"</span>);</div><div class="line"><span class="keyword">var</span> pat=ctx.createPattern(img,<span class="string">"repeat"</span>);</div><div class="line">ctx.rect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">150</span>,<span class="number">100</span>);</div><div class="line">ctx.fillStyle=pat;<span class="comment">//  把背景图设置给填充的样式</span></div><div class="line">ctx.fill();</div></pre></td></tr></table></figure>
+<h2 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h2><h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><ul>
+<li>scale() 方法缩放当前绘图，更大或更小</li>
+<li>语法：context.scale(scalewidth,scaleheight)<ul>
+<li>scalewidth  :  缩放当前绘图的宽度 (1=100%, 0.5=50%, 2=200%, 依次类推)</li>
+<li>scaleheight :  缩放当前绘图的高度 (1=100%, 0.5=50%, 2=200%, etc.)</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//indexOf:获取某个字符串第一次出现的位置，如果没有，返回-1</span></div><div class="line"><span class="comment">//lastIndexOf:从后面开始查找第一次出现的位置。如果没有，返回-1</span></div></pre></td></tr></table></figure>
-<ul>
-<li>去除空白</li>
+</li>
+<li>注意：缩放的是整个画布，缩放后，继续绘制的图形会被放大或缩小。</li>
+<li>案例16缩放案例.html</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">trim();<span class="comment">//去除字符串两边的空格，内部空格不会去除</span></div></pre></td></tr></table></figure>
-<ul>
-<li>大小写转换</li>
+<h3 id="位移画布"><a href="#位移画布" class="headerlink" title="位移画布"></a>位移画布</h3><ul>
+<li>ctx.translate(x,y) 方法重新映射画布上的 (0,0) 位置</li>
+<li>参数说明：<ul>
+<li>x：   添加到水平坐标（x）上的值</li>
+<li>y：   添加到垂直坐标（y）上的值</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//toUpperCase()：全部转换成大写字母</span></div><div class="line"><span class="comment">//toLowerCase()：全部转换成小写字母</span></div></pre></td></tr></table></figure>
-<ul>
-<li>字符串拼接和截取</li>
+</li>
+<li>发生位移后，相当于把画布的0,0坐标 更换到新的x,y的位置，所有绘制的新元素都被影响。</li>
+<li>位移画布一般配合缩放和旋转等。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//字符串截取的方法有很多，记得越多，越混乱，因此就记好用的就行</span></div><div class="line"><span class="comment">//slice ：从start开始，end结束，并且取不到end。</span></div><div class="line"><span class="comment">//subString ：从start开始，end结束，并且取不到end</span></div><div class="line"><span class="comment">// substr ： ：从start开始，截取length个字符。</span></div></pre></td></tr></table></figure>
-<ul>
-<li>字符串切割</li>
+<h3 id="旋转"><a href="#旋转" class="headerlink" title="旋转"></a>旋转</h3><ul>
+<li>context.rotate(angle); 方法旋转当前的绘图</li>
+<li>注意参数是弧度（PI）</li>
+<li>如需将角度转换为弧度，请使用 degrees*Math.PI/180 公式进行计算。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//split:将字符串分割成数组（很常用）</span></div><div class="line"><span class="comment">//功能和数组的join正好相反。</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"张三,李四,王五"</span>;</div><div class="line"><span class="keyword">var</span> arr = str.split(<span class="string">","</span>);</div></pre></td></tr></table></figure>
-<ul>
-<li>字符串替换</li>
+<h2 id="绘制环境保存和还原"><a href="#绘制环境保存和还原" class="headerlink" title="绘制环境保存和还原"></a>绘制环境保存和还原</h2><ul>
+<li>ctx.save()  保存当前环境的状态<ul>
+<li>可以把当前绘制环境进行保存到缓存中。</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">replace(searchValue, replaceValue)</div><div class="line"><span class="comment">//参数：searchValue:需要替换的值    replaceValue:用来替换的值</span></div></pre></td></tr></table></figure>
+</li>
+<li>ctx.restore()   返回之前保存过的路径状态和属性<ul>
+<li>获取最近缓存的ctx</li>
+</ul>
+</li>
+<li>一般配合位移画布使用。</li>
+</ul>
+<h2 id="设置绘制环境的透明度"><a href="#设置绘制环境的透明度" class="headerlink" title="设置绘制环境的透明度"></a>设置绘制环境的透明度</h2><ul>
+<li>context.globalAlpha=number;</li>
+<li>number:透明值。必须介于 0.0（完全透明） 与 1.0（不透明） 之间。</li>
+<li>设置透明度是全局的透明度的样式。注意是全局的。</li>
+</ul>
+<h2 id="画布限定区域绘制"><a href="#画布限定区域绘制" class="headerlink" title="画布限定区域绘制"></a>画布限定区域绘制</h2><ul>
+<li>ctx.clip(); 方法从原始画布中剪切任意形状和尺寸</li>
+<li>一旦剪切了某个区域，则所有之后的绘图都会被限制在被剪切的区域内（不能访问画布上的其他区域）</li>
+<li>一般配合绘制环境的保存和还原。</li>
+</ul>
+<h2 id="画布保存base64编码内容"><a href="#画布保存base64编码内容" class="headerlink" title="画布保存base64编码内容"></a>画布保存base64编码内容</h2><ul>
+<li>把canvas绘制的内容输出成base64内容。 </li>
+<li>语法：canvas.toDataURL(type, encoderOptions);</li>
+<li>例如：canvas.toDataURL(“image/jpg”,1);</li>
+<li>参数说明：<ul>
+<li>type，设置输出的类型，比如 image/png   image/jpeg等</li>
+<li>encoderOptions： 0-1之间的数字，用于标识输出图片的质量，1表示无损压缩，类型为： image/jpeg 或者image/webp才起作用</li>
+</ul>
+</li>
+</ul>
+<h2 id="画布渲染画布"><a href="#画布渲染画布" class="headerlink" title="画布渲染画布"></a>画布渲染画布</h2><ul>
+<li>context.drawImage(img,x,y);</li>
+<li>img参数也可以是画布，也就是把一个画布整体的渲染到另外一个画布上。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas1 = <span class="built_in">document</span>.querySelector(<span class="string">'#cavsElem1'</span>);</div><div class="line"><span class="keyword">var</span> canvas2 = <span class="built_in">document</span>.querySelector(<span class="string">'#cavsElem2'</span>);</div><div class="line"><span class="keyword">var</span> ctx1 = canvas1.getContext(<span class="string">'2d'</span>);</div><div class="line"><span class="keyword">var</span> ctx2 = canvas2.getContext(<span class="string">'2d'</span>);</div><div class="line">ctx1.fillRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">40</span>, <span class="number">40</span>);      <span class="comment">//在第一个画布上绘制矩形</span></div><div class="line"></div><div class="line">ctx2.drawImage(canvas1, <span class="number">10</span>, <span class="number">10</span>);    <span class="comment">//将第一个画布整体绘制到第二个画布上</span></div></pre></td></tr></table></figure>
+<h2 id="线条样式"><a href="#线条样式" class="headerlink" title="线条样式"></a>线条样式</h2><ul>
+<li>lineCap     设置或返回线条的结束端点(线头、线冒)样式<ul>
+<li>butt  ：  默认。向线条的每个末端添加平直的边缘。</li>
+<li>round ：  向线条的每个末端添加圆形线帽。</li>
+<li>square：  向线条的每个末端添加正方形线帽。      </li>
+</ul>
+</li>
+<li>lineJoin    设置或返回两条线相交时，所创建的拐角类型<ul>
+<li>bevel:   创建斜角。</li>
+<li>round:   创建圆角。</li>
+<li>miter:   默认。创建尖角      </li>
+</ul>
+</li>
+<li>lineWidth   设置或返回当前的线条宽度</li>
+<li>miterLimit  设置或返回最大斜接长度<ul>
+<li>斜接长度指的是在两条线交汇处内角和外角之间的距离。</li>
+<li>一般用默认值：10就可以了。除非需要特别长的尖角时，使用此属性。</li>
+</ul>
+</li>
+</ul>
 
       
 
@@ -371,19 +493,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">整理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">HTML5</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">绘制图像</a>
         		</li>
       		
 		</ul>
@@ -439,7 +557,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://huzipengs.github.io/2017/09/02/JavaScript整合之基础篇（三）/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://huzipengs.github.io/2017/09/02/神奇的canvas/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -453,18 +571,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/02/JavaScrippt整合之基础篇（二）/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/02/JavaScript整合之基础篇（三）/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          JavaScript整合之基础篇（二）
+          JavaScript整合之基础篇（三）
         
       </div>
     </a>
   
   
-    <a href="/2017/09/02/神奇的canvas/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">神奇的Canvas</div>
+    <a href="/2017/09/01/JavaScript面向对象/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript面向对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
