@@ -17,7 +17,15 @@
 <meta property="og:description" content="什么是canvas? canvas是HTML5提供的一种新标签 是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。 使用JavaScript在网页上绘制图像，本身不具备绘图功能。 拥有多种绘制路径，矩形、原型、字符以及添加图像的方法 HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://huzipengs.github.io/imgs/10.jpg">
-<meta property="og:updated_time" content="2017-09-05T10:23:14.756Z">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/canvas-x-y.png">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/fill-0-prin.jpg">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/arc.gif">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/textAsign.png">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/font-line1.png">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/linecap.png">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/linejoin.png">
+<meta property="og:image" content="https://huzipengs.github.io/imgs/MiterLimet.png">
+<meta property="og:updated_time" content="2017-09-05T11:07:31.587Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="神奇的Canvas">
 <meta name="twitter:description" content="什么是canvas? canvas是HTML5提供的一种新标签 是一个矩形区域的画布，可以用JavaScript·在上面绘画，控制其每一个像素。 使用JavaScript在网页上绘制图像，本身不具备绘图功能。 拥有多种绘制路径，矩形、原型、字符以及添加图像的方法 HTML5之前的web页面只能用一些固定样式的标签，比如p、div、h1等。">
@@ -211,6 +219,7 @@
 <p>使用[CanvasElement].getContext(‘2d’)来获取2D绘图上下文</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas  = <span class="built_in">document</span>.getElementById( <span class="string">'cavsElem'</span> ); <span class="comment">//获得画布</span></div><div class="line"><span class="keyword">var</span> ctx = canvas.getContext( <span class="string">'2d'</span> );<span class="comment">//注意：2d小写， 3d：webgl</span></div></pre></td></tr></table></figure>
 <h2 id="基本的绘制路径"><a href="#基本的绘制路径" class="headerlink" title="基本的绘制路径"></a>基本的绘制路径</h2><h3 id="canvas坐标系"><a href="#canvas坐标系" class="headerlink" title="canvas坐标系"></a>canvas坐标系</h3><p>canvas坐标系，从最左上角，0开始，x向右增大，y向下增大</p>
+<p><img src="/imgs/canvas-x-y.png" alt="image"></p>
 <h3 id="设置绘制起点（moveTo）"><a href="#设置绘制起点（moveTo）" class="headerlink" title="设置绘制起点（moveTo）"></a>设置绘制起点（moveTo）</h3><ul>
 <li>语法：ctx.moveTo(x, y); </li>
 <li>解释：设置上下文绘制路径的起点。相当于移动画笔到某个位置</li>
@@ -238,6 +247,8 @@
 <li>解释：填充，是将闭合的路径的内容填充具体的颜色。默认黑色。</li>
 <li>注意：交叉路径的填充问题，“非零环绕原则”，顺逆时针穿插次数决定是否填充。</li>
 </ul>
+<p>以下是非0环绕原则的原理：（了解即可，非常少会用到复杂的路径）<br>“非零环绕规则”是这么来判断有自我交叉情况的路径的：对于路径中的任意给定区域，从该区域内部画一条足够长段，<br>使此线段的终点完全落在路径范围之外。<br>图2-14中的那三个箭头所描述的就是上面这个步骤。<br>接下来，将计数器初始化为0，<br>然后，每当这条线段与路径上的直线或曲线相交时，<br>就改变计数器的值。如果是与路径的顺时针部分相交，则加1，<br>如果是与路径的逆时针部分相交，则减1。若计数器的最终值不是0，那么此区域就在路径里面，在调用fill()方法时，<br>浏览器就会对其进行填充。<br>如果最终值是0，那么此区域就不在路径内部，浏览器也就不会对其进行填充了</p>
+<p><img src="/imgs/fill-0-prin.jpg" alt="image"></p>
 <h3 id="快速创建矩形rect-方法"><a href="#快速创建矩形rect-方法" class="headerlink" title="快速创建矩形rect()方法"></a>快速创建矩形rect()方法</h3><ul>
 <li>语法: ctx.rect(x,y,width,height);</li>
 <li>解释: x,y是矩形左上角坐标，width和height都是以像素计算</li>
@@ -258,16 +269,20 @@
 <li>解释: 清除某个矩形内的绘制的内容，相当于橡皮擦</li>
 </ul>
 <h2 id="绘制圆形-arc"><a href="#绘制圆形-arc" class="headerlink" title="绘制圆形(arc)"></a>绘制圆形(arc)</h2><ul>
-<li>概述：arc() 方法创建弧/曲线（用于创建圆或部分圆）。<ul>
+<li><p>概述：arc() 方法创建弧/曲线（用于创建圆或部分圆）。</p>
+<ul>
 <li>语法：ctx.arc(x,y,r,sAngle,eAngle,counterclockwise);</li>
-<li>解释：<ul>
+<li><p>解释：</p>
+<ul>
 <li>x,y：圆心坐标。 </li>
 <li>r：半径大小。</li>
 <li>sAngle:绘制开始的角度。 圆心到最右边点是0度，顺时针方向弧度增大。</li>
 <li>eAngel:结束的角度，注意是弧度。π</li>
 <li>counterclockwise：是否是逆时针。true是逆时针，false：顺时针</li>
 <li>弧度和角度的转换公式： rad = deg*Math.PI/180;  </li>
-<li>在Math提供的方法中<strong>sin、cos等都使用的弧度</strong>   </li>
+<li><p>在Math提供的方法中<strong>sin、cos等都使用的弧度</strong>   </p>
+<p><img src="/imgs/arc.gif" alt="image"></p>
+</li>
 </ul>
 </li>
 </ul>
@@ -291,6 +306,7 @@
 </li>
 </ul>
 <p>例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.textAlign = <span class="string">'left'</span>;</div></pre></td></tr></table></figure></p>
+<p><img src="/imgs/textAsign.png" alt="image"></p>
 <ul>
 <li>textBaseline      设置或返回在绘制文本时使用的当前文本基线   <ul>
 <li>alphabetic ：   默认。文本基线是普通的字母基线。</li>
@@ -302,7 +318,14 @@
 </ul>
 </li>
 </ul>
-<p>例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">ctx.textBaseline = <span class="string">'top'</span>;</div><div class="line"><span class="string">``</span><span class="string">`  </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">### 上下文绘制文字方法  </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">* ctx.fillText()      在画布上绘制“被填充的”文本</span></div><div class="line"><span class="string">* ctx.strokeText()    在画布上绘制文本（无填充）</span></div><div class="line"><span class="string">* ctx.measureText()   返回包含指定文本宽度的对象</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">`</span><span class="string">``</span>javascript</div><div class="line">    <span class="comment">//综合代码：</span></div><div class="line">    ctx.moveTo( <span class="number">300</span>, <span class="number">300</span> );</div><div class="line">    ctx.fillStyle = <span class="string">"purple"</span>;               <span class="comment">//设置填充颜色为紫色</span></div><div class="line">    ctx.font = <span class="string">'20px "微软雅黑"'</span>;           <span class="comment">//设置字体</span></div><div class="line">    ctx.textBaseline = <span class="string">"bottom"</span>;            <span class="comment">//设置字体底线对齐绘制基线</span></div><div class="line">    ctx.textAlign = <span class="string">"left"</span>;                 <span class="comment">//设置字体对齐的方式</span></div><div class="line">    <span class="comment">//ctx.strokeText( "left", 450, 400 );</span></div><div class="line">    ctx.fillText( <span class="string">"Top-g"</span>, <span class="number">100</span>, <span class="number">300</span> );        <span class="comment">//填充文字</span></div></pre></td></tr></table></figure></p>
+<p>例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.textBaseline = <span class="string">'top'</span>;</div></pre></td></tr></table></figure></p>
+<p><img src="/imgs/font-line1.png" alt="image"></p>
+<h3 id="上下文绘制文字方法"><a href="#上下文绘制文字方法" class="headerlink" title="上下文绘制文字方法"></a>上下文绘制文字方法</h3><ul>
+<li>ctx.fillText()      在画布上绘制“被填充的”文本</li>
+<li>ctx.strokeText()    在画布上绘制文本（无填充）</li>
+<li>ctx.measureText()   返回包含指定文本宽度的对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//综合代码：</span></div><div class="line">ctx.moveTo( <span class="number">300</span>, <span class="number">300</span> );</div><div class="line">ctx.fillStyle = <span class="string">"purple"</span>;               <span class="comment">//设置填充颜色为紫色</span></div><div class="line">ctx.font = <span class="string">'20px "微软雅黑"'</span>;           <span class="comment">//设置字体</span></div><div class="line">ctx.textBaseline = <span class="string">"bottom"</span>;            <span class="comment">//设置字体底线对齐绘制基线</span></div><div class="line">ctx.textAlign = <span class="string">"left"</span>;                 <span class="comment">//设置字体对齐的方式</span></div><div class="line"><span class="comment">//ctx.strokeText( "left", 450, 400 );</span></div><div class="line">ctx.fillText( <span class="string">"Top-g"</span>, <span class="number">100</span>, <span class="number">300</span> );        <span class="comment">//填充文字</span></div></pre></td></tr></table></figure>
 <h2 id="绘制图片（drawImage）"><a href="#绘制图片（drawImage）" class="headerlink" title="绘制图片（drawImage）"></a>绘制图片（drawImage）</h2><h3 id="基本绘制图片的方式"><a href="#基本绘制图片的方式" class="headerlink" title="基本绘制图片的方式"></a>基本绘制图片的方式</h3><ul>
 <li>context.drawImage(img,x,y);</li>
 <li>参数说明： x,y 绘制图片左上角的坐标， img是绘制图片的dom对象。</li>
@@ -430,22 +453,26 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas1 = <span class="built_in">document</span>.querySelector(<span class="string">'#cavsElem1'</span>);</div><div class="line"><span class="keyword">var</span> canvas2 = <span class="built_in">document</span>.querySelector(<span class="string">'#cavsElem2'</span>);</div><div class="line"><span class="keyword">var</span> ctx1 = canvas1.getContext(<span class="string">'2d'</span>);</div><div class="line"><span class="keyword">var</span> ctx2 = canvas2.getContext(<span class="string">'2d'</span>);</div><div class="line">ctx1.fillRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">40</span>, <span class="number">40</span>);      <span class="comment">//在第一个画布上绘制矩形</span></div><div class="line"></div><div class="line">ctx2.drawImage(canvas1, <span class="number">10</span>, <span class="number">10</span>);    <span class="comment">//将第一个画布整体绘制到第二个画布上</span></div></pre></td></tr></table></figure>
 <h2 id="线条样式"><a href="#线条样式" class="headerlink" title="线条样式"></a>线条样式</h2><ul>
-<li>lineCap     设置或返回线条的结束端点(线头、线冒)样式<ul>
+<li><p>lineCap     设置或返回线条的结束端点(线头、线冒)样式</p>
+<ul>
 <li>butt  ：  默认。向线条的每个末端添加平直的边缘。</li>
 <li>round ：  向线条的每个末端添加圆形线帽。</li>
-<li>square：  向线条的每个末端添加正方形线帽。      </li>
+<li><p>square：  向线条的每个末端添加正方形线帽。</p>
+<p><img src="/imgs/linecap.png" alt="image">    </p>
+</li>
 </ul>
 </li>
-<li>lineJoin    设置或返回两条线相交时，所创建的拐角类型<ul>
+<li><p>lineJoin    设置或返回两条线相交时，所创建的拐角类型</p>
+<ul>
 <li>bevel:   创建斜角。</li>
 <li>round:   创建圆角。</li>
-<li>miter:   默认。创建尖角      </li>
+<li>miter:   默认。创建尖角<br><img src="/imgs/linejoin.png" alt="image">  </li>
 </ul>
 </li>
 <li>lineWidth   设置或返回当前的线条宽度</li>
 <li>miterLimit  设置或返回最大斜接长度<ul>
 <li>斜接长度指的是在两条线交汇处内角和外角之间的距离。</li>
-<li>一般用默认值：10就可以了。除非需要特别长的尖角时，使用此属性。</li>
+<li>一般用默认值：10就可以了。除非需要特别长的尖角时，使用此属性。<br><img src="/imgs/MiterLimet.png" alt="image">  </li>
 </ul>
 </li>
 </ul>
